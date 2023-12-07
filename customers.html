@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg " style="background-color: transparent;">
+        <div class="container">
+          <a class="navbar-brand " href="#"> <i class="fa-brands fa-bandcamp me-2" ></i>Spark Bank</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://internship.thesparksfoundation.info" target="_blank">AboutUs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="customers.html">Customers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#services">Services</a>
+              </li>
+            </ul>
+        
+          </div>
+        </div>
+      </nav> 
+
+     <div class="container text-center m-5">
+      <div class="text">
+        <h1 class="m-5"  style="color:#021447;">The Available Money: <span id="availableAmount"> 1000000</span>$</h1>
+      </div>
+<button type="button" class=" button" data-bs-toggle="modal" data-bs-target="#sendmoney">
+    Money Transfer Process
+  </button>
+  <button type="button" class=" button" data-bs-toggle="modal" data-bs-target="#moneytransaction">
+   View Money Transaction
+  </button>
+  
+  <!-- send money transfer Modal -->
+  <div class="modal fade" id="sendmoney" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #021447;">Money Transfer</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="input-group mb-3">
+                <input type="text" id="vaildName" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2" style="color: #021447;">@email.com</span>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" style="color: #021447;">$</span>
+                <input type="text" id="vaildAmount" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <span class="input-group-text" style="color: #021447;">.00</span>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class=" close" data-bs-dismiss="modal">Close</button>
+          <button type="button" class=" button" id="send">Send</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+  <!-- send view money transaction Modal -->
+  <div class="modal fade" id="moneytransaction" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #021447;">View Money Transaction</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <ol id="transaction-history">
+
+            </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class=" close" data-bs-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+</div>
+
+
+  </div>
+  <div class="container my-5">
+    <table class="table table-striped ">
+        <thead class="table-dark ">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Balance in ($)</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+            <tr >
+              <th scope=" ">1</th>
+              <td>Mariam</td>
+              <td>Mariam@email.coom</td>
+              <td id="Mariam">40000</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Salma</td>
+              <td>Salma@email.com</td>
+              <td id="Salma">50000</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td >Asmaa</td>
+              <td>Asmaa@emai.com</td>
+              <td id="Asmaa">30000</td>
+
+
+            </tr>
+            <tr >
+              <th scope="row ">4</th>
+              <td>Menna</td>
+              <td>Menna@email.coom</td>
+              <td id="Menna">100000</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Ahmed</td>
+              <td>Ahmed@email.com</td>
+              <td id="Ahmed">55500</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td >Mohmed</td>
+              <td>Mohmed@emai.com</td>
+              <td>20000</td>
+              
+
+            </tr>
+            <th scope=" row">7</th>
+            <td>Omer</td>
+            <td>Omer@email.coom</td>
+            <td id="Omer">60000</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Alaa</td>
+            <td>Alaa@email.com</td>
+            <td id="Alaa">66500</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td >Mazen</td>
+            <td>Mazen@emai.com</td>
+            <td id="Mazen">80000</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td >Fareda</td>
+            <td>Fareda@emai.com</td>
+            <td id="Fareda">10000</td>
+          </tr>
+          </tbody>
+      </table>
+  </div>
+  <footer class="text-center bg-body-tertiary">
+ 
+    <div class="container pt-4">
+  
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="https://www.facebook.com/thesparksfoundation.info"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i></a>
+  
+        <!-- Twitter -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="https://twitter.com/tsfsingapore"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="https://internship.thesparksfoundation.info/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="https://www.instagram.com/thesparksfoundation.info/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          data-mdb-ripple-init
+          class="btn btn-link btn-floating btn-lg text-body m-1"
+          href="https://www.linkedin.com/company/the-sparks-foundation/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+     
+       
+      </section>
+  
+    </div>
+   
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2020 Copyright:
+      <a class="text-body" href="https://internship.thesparksfoundation.info/">The Spark Bank.com</a>
+    </div>
+    
+  </footer>
+      <script src="js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.11.0_umd_popper.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/bootstrap.js"></script>
+  <script src="js/index.js"></script>
+
+</body>
+</html>

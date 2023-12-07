@@ -1,0 +1,128 @@
+html,
+body {
+  margin: 0;
+
+  padding: 0;
+}
+.navbar{
+  padding: 15px 0;
+}
+a{
+  text-decoration: none;
+}
+  
+  
+
+.navbar .navbar-brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px ;
+  font-family:   'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #023047;
+}
+
+.navbar .navbar-brand svg{
+  width: 40px;
+  height: 40px;
+}
+.navbar .navbar-brand:hover{
+  color: #021447; 
+}
+.navbar a{
+  color: #021447;
+font-weight: 500;
+font-size: 20px;
+}
+.navbar a:hover{
+  color: #448bc5;
+}
+.section1 .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section1 h1{
+  font-size: 60px;
+  font-weight: normal;
+  text-align: start;
+margin-bottom: 30px;
+color: #021447;
+font-weight: bold;
+}
+.section1 .row p{
+font-size: 20px;
+font-weight: bold;
+color: #021447;
+}
+.section1 img{
+  width: 800px;
+  height: 500px;
+}
+ .button{
+  background-color: #021447;
+  color:white;
+  text-align:center;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+}
+.button:hover{
+  background-color: white;
+  color: #021447;
+  font-weight: bold;
+}
+.modal-footer .button{
+  border-radius: 20px;
+}
+.close{
+  border:none;
+  background-color: #3e3f41;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+}
+.btn-close:focus{
+  border-color: none;
+  
+}
+span{
+  color: #021447; 
+}
+.boxes{
+  border:1px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.box {
+margin-bottom: 20px;
+
+}
+.box img{
+  height: 250px;
+  width: 100%;
+}
+.boxes .text{
+  padding: 20px;
+
+
+
+}
+.boxes .text h2{
+  color:#021447 ;
+  font-size: 35px;
+}
+.boxes .text h2:hover{
+  color: #448bc5;
+}
+.boxes .text p{
+  font-weight: bold;
+  color: black;
+}
+footer svg{
+  color: #021447;
+}
